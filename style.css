@@ -1,0 +1,177 @@
+:root {
+    --color-fondo: #c8a9d2;
+    --color-principal: #b764eb;
+    --color-secundario: #f6adf5;
+    --color-acento: #44106c;
+    --color-texto: #0d0802;
+    --color-header-footer: #bc60f9;
+    --color-links: #964ed9;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-header-footer);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+}
+
+header .intro {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.header-img {
+    max-width: 400px; /* antes era 100% */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    margin: 1rem auto 0;
+    display: block;
+}
+
+.content-img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    display: block;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.fase {
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.fase h2 {
+    color: var(--color-acento);
+    margin-top: 0;
+}
+
+.fase h3 {
+    margin-top: 1.5rem;
+    color: var(--color-principal);
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+thead tr {
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    text-align: left;
+    font-weight: 700;
+}
+
+thead tr th, tbody tr td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: var(--color-fondo);
+}
+
+.content-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    display: block;
+}
+
+aside.tip {
+    background-color: var(--color-principal);
+    border-left: 5px solid var(--color-acento);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    color: var(--color-texto);
+}
+
+aside.tip h4 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: var(--color-header-footer);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px 15px 0 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
+/* ===== Modo oscuro ===== */
+body.modo-oscuro {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.modo-oscuro .fase {
+    background-color: #2e2e2e;
+    color: #f0f0f0;
+}
+
+body.modo-oscuro header,
+body.modo-oscuro footer {
+    background-color: #3d206e;
+}
+
+body.modo-oscuro table {
+    background: #444;
+    color: #fff;
+}
+
+body.modo-oscuro thead tr {
+    background-color: #5a2bbf;
+    color: #fff;
+}
+
+body.modo-oscuro aside.tip {
+    background-color: #5a2bbf;
+    color: #fff;
+    border-left-color: #bb86fc;
+}
